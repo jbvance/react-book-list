@@ -6,6 +6,7 @@ import ActiveBook from './reducer_active_book';
 //that way, when a reducer gets called, it only deals with the
 //relevant part of the application state
 //Any key provided to combineReducers ends up as a key on application state
+//For each key in combineReducers object, you assign one reducer
 const rootReducer = combineReducers({
   books: BooksReducer,
   activeBook: ActiveBook
